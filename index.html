@@ -53,22 +53,7 @@
         <script src="data/TIANGLISTRIK_RBI_17.js"></script>
         <script src="data/POI_WayHuwi_18.js"></script>
         <script>
-        var highlightLayer;
-        function highlightFeature(e) {
-            highlightLayer = e.target;
-
-            if (e.target.feature.geometry.type === 'LineString') {
-              highlightLayer.setStyle({
-                color: '#ffff00',
-              });
-            } else {
-              highlightLayer.setStyle({
-                fillColor: '#ffff00',
-                fillOpacity: 1
-              });
-            }
-            highlightLayer.openPopup();
-        }
+        
         var map = L.map('map', {
             zoomControl:true, maxZoom:20, minZoom:1
         }).fitBounds([[-5.380199892539663,105.2644210962773],[-5.328515468948435,105.35125523842167]]);
